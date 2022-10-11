@@ -1,29 +1,30 @@
 # Will the Customer Accept the Coupon?
 
-## Exploratory Data Analysis 
+## Exploratory Data Analysis Summary of findings
 
-Context
+Findings 1:
+In that Car feature has 99% of missing value. so we need to drop the feature because it has lesss predictive power
+For other features like Bar,CoffeeHouse,Carryaway,RestaurentLessThan20,Restaurent20To50 has approx 1% missing values. we can fill these with some other value
 
-Imagine driving through town and a coupon is delivered to your cell phone for a restaraunt near where you are driving. Would you accept that coupon and take a short detour to the restaraunt? Would you accept the coupon but use it on a sunbsequent trip? Would you ignore the coupon entirely? What if the coupon was for a bar instead of a restaraunt? What about a coffee house? Would you accept a bar coupon with a minor passenger in the car? What about if it was just you and your partner in the car? Would weather impact the rate of acceptance? What about the time of day?
+Findings 2: It is observed total of 56.8 %  chose to accept the coupon
 
-Obviously, proximity to the business is a factor on whether the coupon is delivered to the driver or not, but what are the factors that determine whether a driver accepts the coupon once it is delivered to them? How would you determine whether a driver is likely to accept a coupon?
+Findings 3: It is observed  maximum coupons accepted by users are Carry Out and Take Away. and least accepted is Bar coupons
 
-Overview
+Findings 4: On a another findings highest coupon counts are under sunny weather. users go out and accept more coupons in sunny weather
 
-The goal of this project is to use what you know about visualizations and probability distributions to distinguish between customers who accepted a driving coupon versus those that did not.
+Findings 5: It is observed drivers goes to bar  4 to 8 times had accepted more coupons. drivers goes to more than once in a month have acceptenace chance of more than 60%
 
-Data
 
-This data comes to us from the UCI Machine Learning repository and was collected via a survey on Amazon Mechanical Turk. The survey describes different driving scenarios including the destination, current time, weather, passenger, etc., and then ask the person whether he will accept the coupon if he is the driver. Answers that the user will drive there ‘right away’ or ‘later before the coupon expires’ are labeled as ‘Y = 1’ and answers ‘no, I do not want the coupon’ are labeled as ‘Y = 0’. There are five different types of coupons -- less expensive restaurants (under $20), coffee houses, carry out & take away, bar, and more expensive restaurants ($20 - $50).
+Next Step Recommendations :
+  The data seems small.we need to see with the larger dataset whether any changes in observations
 
-Deliverables
 
-Your final product should be a brief report that highlights the differences between customers who did and did not accept the coupons. To explore the data you will utilize your knowledge of plotting, statistical summaries, and visualization using Python. You will publish your findings in a public facing github repository as your first portfolio piece.
 
+
+File Information :
+-------------------
 
 Folder/ File Names : 
 data contains coupon.csv
 images folder contains git examples
 prompt.ipynb Jupyter Notebook file contain exploratory data analysis information.
-
-  
